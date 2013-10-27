@@ -1,0 +1,46 @@
+/* 
+    Document   : styles
+    Created on : Oct 27, 2013, 11:23:58 PM
+    Author     : hnc
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+  display: block;
+}
+
+body {
+  width: 1024px;
+  margin: 0 auto;
+  font-family: arial;
+  background-color: #f3f3f3;
+}
+
+.top-page {
+  height: 50px;
+  color: #f4d400;
+  background-color: #1e2329;
+  line-height: 50px;
+  font-size: 31px;
+  font-variant: small-caps;
+  padding: 0 15px;
+  font-weight: 600;
+}
+
+.wrap-body {
+  padding: 0 40px;
+}
+
+.left-logo {
+  width: 124px;
+  float: left;
+  margin-top: 15px;
+}
+
+.right-banner {
+  width: 820px;
+  float: left;
+  text-align: right;
+}
+
