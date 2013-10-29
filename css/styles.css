@@ -10,11 +10,33 @@ root {
   display: block;
 }
 
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.clearfix:after { 
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden; 
+}
+.clearfix { 
+  display: inline-block;  
+}
+* html .clearfix {  
+  height: 1%;  
+} /* Hides from IE-mac \*/
+.clearfix {  
+  display: block;  
+}
+
 body {
   width: 1024px;
   margin: 0 auto;
   font-family: arial;
-  background-color: #f3f3f3;
+  
 }
 
 .top-page {
@@ -22,14 +44,23 @@ body {
   color: #f4d400;
   background-color: #1e2329;
   line-height: 50px;
-  font-size: 31px;
-  font-variant: small-caps;
+  font-size: 23px;
+  text-transform: uppercase;
   padding: 0 15px;
   font-weight: 600;
 }
 
 .wrap-body {
   padding: 0 40px;
+  background-color: #f3f3f3;
+}
+
+.wrap-body .flexslider {
+  margin-bottom: 20px;
+}
+
+.top-content {
+  margin-bottom: 5px;
 }
 
 .left-logo {
@@ -44,3 +75,220 @@ body {
   text-align: right;
 }
 
+.menu {
+  height: 40px;
+  background-color: #0852cd;
+  padding-left: 15px;
+}
+
+ul.top-menu {
+  
+}
+
+ul.top-menu li {
+  display: block;
+  float: left;
+}
+
+ul.top-menu li a {
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Myriad Pro";
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 13px;
+  display: block;
+}
+
+ul.top-menu li a.active, ul.top-menu li a:hover {
+  background-color: #fff;
+  color: #383838;
+}
+
+.left-content {
+  width: 170px;
+  float: left;
+}
+
+.right-content {
+  width: 770px;
+  float: left;
+  margin-left: 4px;
+}
+
+.date-cotent {
+  color: #4a4a4a;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.search-block {
+  border: 1px solid #afafaf;
+  border-radius: 3px;
+}
+
+.search-block li {
+  padding: 6px 0px 7px 35px
+}
+
+.search-block li:last-child {
+  padding-bottom: 15px;
+}
+
+.search-block li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.search-block .search-title-block {
+  background: url(../images/div.png) bottom center no-repeat;
+  color: #ff6000;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  padding: 7px 0;
+}
+
+
+.search-form {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.search-form .search-field {
+  width: 115px;
+  height: 25px;
+  padding: 0 0 0 5px;
+  margin: 0;
+  display: block;
+  float: left;
+}
+
+.search-block .des-support-online {
+  
+}
+.des-1 {
+  font-size: 12px;
+  color: #4a4a4a;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.ym-support img {
+  margin-bottom: -3px;
+  margin-left: 3px;
+}
+
+.table-tg {
+  border-top: 1px solid #afafaf;
+  border-left: 1px solid #afafaf;
+  margin-left: 36px;
+}
+
+.support-online-block {
+  margin-bottom: 13px;
+}
+
+.table-tg tr td{
+  border-bottom: 1px solid #afafaf;
+  border-right: 1px solid #afafaf;
+  padding: 3px;
+}
+
+
+/* content page */
+.right-content .wrap-right-content {
+  padding-left: 15px;
+}
+
+.title-content {
+  color: #0852cd;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-left: 13px;
+  font-weight: 600;
+}
+
+.wrap-right-content {
+  
+}
+
+.right-content .item {
+  height: 200px;
+  width: 181px;
+  float: left;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  background-color: #FFF;
+  margin-right: 7px;
+  margin-bottom: 10px;
+}
+
+.right-content .item.last {
+  margin-right: 0;
+}
+
+.right-content .item .wrap-item {
+  padding: 6px;
+}
+
+.right-content .item .wrap-item p {
+  font-size: 12px;
+  text-align: center;
+  padding: 3px 0;
+  font-weight: 600;
+}
+
+.right-content .item .wrap-item .title-item {
+  color: #004c8f;
+}
+
+.right-content .item .wrap-item .price-item {
+  color: #000;
+}
+
+.right-content .item .wrap-item .des-item {
+  color: #4a4a4a;
+}
+
+/* Footer */
+
+.footer {
+  height: 120px;
+  padding-top: 25px;
+  background-color: #1e2329;
+  
+}
+
+.footer-menu ul {
+  margin: 0 auto;
+  width: 525px;
+}
+
+.footer-menu li {
+  display: block;
+  float: left;
+}
+
+.footer-menu li a {
+  line-height: 40px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.footer-menu li .middle-menu {
+  color: #4a4a4a;
+}
+
+.footer .des-1 {
+  font-size: 14px;
+}
